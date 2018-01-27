@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
+
+
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<p>
+
+</p>
 
 
 
@@ -13,14 +19,29 @@
     
   </tr>
   <tr>
-  	<td><p id="CLAM_BCH"></p></td>
-    <td><p id="CLAM_DOGE"></p></td>
-    <td><p id="CLAM_DASH"></td>
-    <td><p id="CLAM_LTC"></td>
+  	<td><p id="CLAM_BCH" ></p><button onclick="copyToClipboard('#CLAM_BCH')">Copy</button></td>
+    <td><p id="CLAM_DOGE"></p><button onclick="copyToClipboard('#CLAM_DOGE')">Copy</button></td>
+    <td><p id="CLAM_DASH"></p><button onclick="copyToClipboard('#CLAM_DASH')">Copy</button></td>
+    <td><p id="CLAM_LTC"></p><button onclick="copyToClipboard('#CLAM_LTC')">Copy</button></td>
    
   </tr>
 
 </table>
+
+
+    <script type="text/javascript">
+      function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+    </script>
+
+
+
 
 
 <script>
