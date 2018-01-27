@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<table style="width:100%">
+  <tr>
+  	<th>CLAM_BCH</th>
+    <th>CLAM_DOGE</th>
+    <th>CLAM_DASH</th>
+    <th>CLAM_LTC</th>
+    
+  </tr>
+  <tr>
+  	<td><p id="CLAM_BCH"></p></td>
+    <td><p id="CLAM_DOGE"></p></td>
+    <td><p id="CLAM_DASH"></td>
+    <td><p id="CLAM_LTC"></td>
+   
+  </tr>
+
+</table>
+
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("CLAM_BCH").innerHTML = myObj.rate;
+    }
+};
+xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_BCH', true);
+xmlhttp.send();
+
+</script>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("CLAM_DASH").innerHTML = myObj.rate;
+    }
+};
+xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_DASH', true);
+xmlhttp.send();
+
+</script>
+
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("CLAM_DOGE").innerHTML = myObj.rate;
+    }
+};
+xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_DOGE', true);
+xmlhttp.send();
+
+</script>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("CLAM_LTC").innerHTML = myObj.rate;
+    }
+};
+xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_LTC', true);
+xmlhttp.send();
+
+</script>
+
+
+
+</body>
+</html>
