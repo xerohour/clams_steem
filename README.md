@@ -2,6 +2,7 @@
 - What is the project about?
 
 ![http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/clams.png](http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/clams.png) ![https://png.icons8.com/nolan/2x/arrow.png](https://png.icons8.com/nolan/2x/arrow.png) ![http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/steem.png](http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/steem.png)
+
 This project is about making it easier for a user to convert CLAMCOIN into Steem through [ShapeShift.io ](ShapeShift.io) and [blocktrades.us](blocktrades.us/)
 
 Currently the only way for a user to convert CLAM into STEEM/SP/SBD is to either get lucky on ShapeShift if STEEM trades are enabled or the user will have to first trade for an altcoin that is accepted on [blocktrades.us](blocktrades.us/)
