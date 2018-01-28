@@ -54,14 +54,17 @@ html *
 
 <script>
 
+   
+
+   
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        document.getElementById("CLAM_BCH").innerHTML = myObj.rate;
+        document.getElementById("CLAM_BCH").innerHTML = myObj.rate - myObj.minerFee;
     }
 };
-xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_BCH', true);
+xmlhttp.open("GET", 'https://shapeshift.io/marketinfo/clam_bch', true);
 xmlhttp.send();
 
 </script>
@@ -72,10 +75,10 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        document.getElementById("CLAM_DASH").innerHTML = myObj.rate;
+        document.getElementById("CLAM_DASH").innerHTML = myObj.rate - myObj.minerFee;
     }
 };
-xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_DASH', true);
+xmlhttp.open("GET", 'https://shapeshift.io/marketinfo/clam_DASH', true);
 xmlhttp.send();
 
 </script>
@@ -87,10 +90,10 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        document.getElementById("CLAM_DOGE").innerHTML = myObj.rate;
+        document.getElementById("CLAM_DOGE").innerHTML = myObj.rate - myObj.minerFee;
     }
 };
-xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_DOGE', true);
+xmlhttp.open("GET", 'https://shapeshift.io/marketinfo/clam_DOGE', true);
 xmlhttp.send();
 
 </script>
@@ -101,10 +104,10 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        document.getElementById("CLAM_LTC").innerHTML = myObj.rate;
+        document.getElementById("CLAM_LTC").innerHTML = myObj.rate - myObj.minerFee;
     }
 };
-xmlhttp.open("GET", 'https://shapeshift.io/rate/clam_LTC', true);
+xmlhttp.open("GET", 'https://shapeshift.io/marketinfo/clam_LTC', true);
 xmlhttp.send();
 
 </script>
