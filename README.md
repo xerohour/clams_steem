@@ -28,3 +28,5 @@ This is a working prototype at the moment
 
 
 <br /><hr/><em>Posted on <a href="https://utopian.io/utopian-io/@xerohour/new-project-clam-to-steem-conversion-calculator">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>
+
+Copyright © 2020
